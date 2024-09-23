@@ -9,6 +9,10 @@ const playPauseBtn = document.getElementById('playPauseBtn');
 const background = document.getElementById('background');
 const audioPlayer = document.getElementById('audioPlayer');
 
+
+
+
+
 // Объект с данными для каждого состояния
 const soundAndBackground = {
   forest: {
