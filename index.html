@@ -11,22 +11,33 @@
     <header>
       
         <div class="background" id="background">
+            <div class="buttons">
             <button class="btn" id="forestBtn">Лес</button>
             <button class="btn" id="winterBtn">Зимний лес</button>
             <button class="btn" id="mountainBtn">Горный луг</button>
             <button class="btn" id="oceanBtn">Океан</button>
             <button class="btn" id="rainBtn">Дождь</button>
-            <button class="play-pause-btn" id="playPauseBtn">Play</button>
+        </div>
           </div>
     </header>
     <main>
 
         <audio id="audioPlayer" src=""></audio>
         
+    
     </main>
     <footer>
+        <div class="footer">
         <a href="https://app.rs.school/"><img src="./assets/img/rs-logo.svg" alt="rsschool"></a>
+       
+        <div class="volumeControl">
+            <button class="play-pause-btn" id="playPauseBtn">Play</button>
+            <label for="volumeControl">Громкость:</label>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+        </div>
         <a href="https://github.com/berstix"><img src="./assets/img/github-logo.svg" alt="github" id="github"></a>
+    </div>
+    
     </footer>
    
     <script src="./index.js"></script>

@@ -14,12 +14,24 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    
+   
     background-size: cover;
     background-position: center;
     transition: background-image 1s ease;
   }
-  
+  .background{
+    width: 750px;
+    height: 450px;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    
+  }
+.buttons{
+    
+  padding-left: 80px;
+   
+  }
   .btn, .play-pause-btn {
     margin: 10px;
     padding: 10px 20px;
@@ -29,14 +41,65 @@ body, html {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
+    
+    
   }
   
   .btn:hover, .play-pause-btn:hover {
     background-color: #45a049;
   }
-  footer{
+  .footer{
+    margin-top: 255px;
+    margin-left: -600px;
+    margin-right: 50px;
+    position: absolute;
     display: flex;
+    flex-direction: row;
 	justify-content: center;
-    width: 100px;
-    height: 20px;
+    width: 500px;
+    height: 100px;
+    
+    gap: 160px;
   }
+  
+  footer img{
+    width: 80px;
+    height: 80px;
+  }
+
+/* Базовый стиль ползунка */
+#volumeControl {
+  -webkit-appearance: none; 
+  width: 200px; 
+  height: 8px; 
+  background-color: #ddd; 
+  border-radius: 5px; 
+  outline: none;
+  transition: background 0.3s ease; 
+}
+
+/* Стиль при наведении */
+#volumeControl:hover {
+  background-color: #ccc; 
+}
+
+/* Стиль ползунка (бегунка) */
+#volumeControl::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  width: 20px; 
+  height: 20px; 
+  background-color: #4CAF50; 
+  border-radius: 50%; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+/* Стиль бегунка при наведении */
+#volumeControl::-webkit-slider-thumb:hover {
+  background-color: #45a049;
+}
+
+
+
+
+  
