@@ -9,6 +9,8 @@ const playPauseBtn = document.getElementById('playPauseBtn');
 const background = document.getElementById('background');
 const audioPlayer = document.getElementById('audioPlayer');
 
+
+
 // Объект с данными для каждого состояния
 const soundAndBackground = {
   forest: {
@@ -67,4 +69,12 @@ playPauseBtn.addEventListener('click', () => {
   } else {
     pauseAudio();
   }
+});
+
+
+const volumeControl = document.getElementById('volumeControl');
+
+// Обрабатываем изменение громкости
+volumeControl.addEventListener('input', function() {
+  audioPlayer.volume = this.value;
 });
